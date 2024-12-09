@@ -22,3 +22,9 @@ export const SignInWithGoogleSchema = z.object({
     image: z.string().url("Invalid image URL").optional(),
   }),
 });
+
+export const FamilySchema = z.object({
+  name: z.string().min(1, { message: "Name is required." }),
+  image: z.string().optional(),
+  description: z.string().optional(),
+});

@@ -29,7 +29,7 @@ export async function MainNav() {
 
   return (
     <>
-      <nav className="fixed z-50 flex w-full items-center justify-between gap-5 bg-purple-400  p-6 sm:px-12">
+      <nav className="flex w-full items-center justify-between gap-5 bg-purple-400  p-6 sm:px-12">
         <Link href="/" className="flex items-center gap-1">
           <Image
             src="/logo.png"
@@ -49,14 +49,14 @@ export async function MainNav() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
+              <Link href="/find-user" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Find Users
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
+              <Link href="/create" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Create Family
                 </NavigationMenuLink>
